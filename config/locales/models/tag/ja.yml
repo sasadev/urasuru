@@ -1,0 +1,36 @@
+ja:
+  activerecord:
+    models:
+      tag: タグ
+    attributes:
+      tag:
+        id: ID
+        name: タグ名
+        color: 色
+        image: 画像
+        use_model: 使用箇所
+    flash:
+      tag:
+        actions:
+          create:
+            success: タグの登録を完了しました。
+            failure:  入力を修正してください。
+          update:
+            success:  タグの更新を完了しました。
+            failure:  入力を修正してください。
+          destroy:
+            success:  タグの削除を完了しました。
+            failure:  タグを削除できません。
+          cancel:
+            success:  タグのキャンセルを完了しました。
+            failure:  タグをキャンセルできません。
+          suspend:
+            success:  タグを無効にしました。
+          activate:
+            success:  タグを有効にしました。
+  enums:
+    tag:
+      use_model:
+        use_seminar: セミナー
+        use_society: 学会情報
+        use_notification: お知らせ

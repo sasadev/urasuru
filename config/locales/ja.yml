@@ -1,0 +1,365 @@
+---
+ja:
+  date:
+    abbr_day_names:
+    - 日
+    - 月
+    - 火
+    - 水
+    - 木
+    - 金
+    - 土
+    abbr_month_names:
+    -
+    - 1月
+    - 2月
+    - 3月
+    - 4月
+    - 5月
+    - 6月
+    - 7月
+    - 8月
+    - 9月
+    - 10月
+    - 11月
+    - 12月
+    day_names:
+    - 日曜日
+    - 月曜日
+    - 火曜日
+    - 水曜日
+    - 木曜日
+    - 金曜日
+    - 土曜日
+    formats:
+      default: "%Y/%m/%d"
+      long: "%Y年%m月%d日(%a)"
+      short: "%m/%d"
+    month_names:
+    -
+    - 1月
+    - 2月
+    - 3月
+    - 4月
+    - 5月
+    - 6月
+    - 7月
+    - 8月
+    - 9月
+    - 10月
+    - 11月
+    - 12月
+    order:
+    - :year
+    - :month
+    - :day
+    this_month: '当月'
+    next_month: '翌月'
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: 約1時間
+        other: 約%{count}時間
+      about_x_months:
+        one: 約1ヶ月
+        other: 約%{count}ヶ月
+      about_x_years:
+        one: 約1年
+        other: 約%{count}年
+      almost_x_years:
+        one: 1年弱
+        other: "%{count}年弱"
+      half_a_minute: 30秒前後
+      less_than_x_minutes:
+        one: 1分以内
+        other: "%{count}分未満"
+      less_than_x_seconds:
+        one: 1秒以内d
+        other: "%{count}秒未満"
+      over_x_years:
+        one: 1年以上
+        other: "%{count}年以上"
+      x_days:
+        one: 1日
+        other: "%{count}日"
+      x_minutes:
+        one: 1分
+        other: "%{count}分"
+      x_months:
+        one: 1ヶ月
+        other: "%{count}月"
+#        other: "%{count}ヶ月"
+      x_seconds:
+        one: 1秒
+        other: "%{count}秒"
+    prompts:
+      day: 日
+      hour: 時
+      minute: 分
+      month: 月
+      second: 秒
+      year: 年
+  errors:
+    format: "%{attribute}%{message}"
+    messages:
+      accepted: を受諾してください。
+      blank: を入力してください。
+      present: は入力しないでください。
+      confirmation: と%{attribute}の入力が一致しません。
+      empty: を入力してください。
+      equal_to: は%{count}にしてください。
+      even: は偶数にしてください。
+      exclusion: は予約されています。
+      greater_than: は%{count}より大きい値にしてください。
+      greater_than_or_equal_to: は%{count}以上の値にしてください。
+      inclusion: は一覧にありません。
+      invalid: は不正な値です。
+      less_than: は%{count}より小さい値にしてください。
+      less_than_or_equal_to: は%{count}以下の値にしてください。
+      not_a_number: は数値で入力してください。
+      not_an_integer: は整数で入力してください。
+      odd: は奇数にしてください。
+      record_invalid: バリデーションに失敗しました。 %{errors}
+      restrict_dependent_destroy: "%{record}が存在しているので削除できません。"
+      taken: はすでに存在します。
+      too_long: は%{count}文字以内で入力してください。
+      too_short: は%{count}文字以上で入力してください。
+      wrong_length: は%{count}文字で入力してください。
+      other_than: は%{count}以外の値にしてください。
+      invalid_email_address: は正しく入力してください。
+      invalid_date_format: は正しく入力してください。
+      extension_white_list_error: "は.%{allowed_types}ファイルのみアップロードできます。"
+      mini_magick_processing_error: ファイルを処理できませんでした。jpg, jpeg, pngのみアップロードできます。
+    template:
+      body: 次の項目を確認してください。
+      header:
+        one: "%{model}にエラーが発生しました。"
+        other: "%{model}に%{count}個のエラーが発生しました。"
+  helpers:
+    select:
+      prompt: 選択してください
+    submit:
+      confirm: 確認画面へ進む
+      create: 登録する
+      submit: 保存する
+      update: 更新する
+    page_entries_info:
+      more_pages:
+        display_entries: "<b>%{total}</b>中の%{entry_name}を表示しています <b>%{first} - %{last}</b>"
+      one_page:
+        display_entries:
+          one: "<b>%{count}</b>レコード表示中です %{entry_name}"
+          other: "<b>%{count}</b>レコード表示中です %{entry_name}"
+          zero: "レコードが見つかりませんでした %{entry_name}"
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%n%u"
+        precision: 0
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: 円
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: 十億
+          million: 百万
+          quadrillion: 千兆
+          thousand: 千
+          trillion: 兆
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n%u"
+        units:
+          byte: バイト
+          gb: ギガバイト
+          kb: キロバイト
+          mb: メガバイト
+          tb: テラバイト
+    percentage:
+      format:
+        delimiter: ''
+        format: "%n%"
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: と
+      two_words_connector: と
+      words_connector: と
+  sex:
+    male: "男性"
+    female: "女性"
+    unknown: "不明"
+  output_status:
+    before: "未出力"
+    after: "出力済"
+  time:
+    am: 午前
+    formats:
+      default: "%Y/%m/%d %H:%M:%S"
+      long: "%Y年%m月%d日(%a) %H時%M分%S秒 %z"
+      short: "%y/%m/%d %H:%M"
+    pm: 午後
+  admin:
+    home:
+      name: "ホーム"
+    pagination:
+#      previous: "&laquo; 前"
+#      next: "次 &raquo;"
+      previous: "＜"
+      next: "＞"
+      truncate: "…"
+      last: ">>"
+      first: "<<"
+    misc:
+      filter_date_format: "mm/dd/yy" # a combination of 'dd', 'mm' and 'yy' with any delimiter. No other interpolation will be done!
+      search: "検索"
+      cancel: "キャンセル"
+      filter: "フィルタ"
+      generate_file: "出力"
+      refresh: "更新"
+      details: "詳細"
+      show_all: "全て表示"
+      add_filter: "フィルタを追加"
+      bulk_menu_title: "選択したアイテム"
+      remove: "削除"
+      add_new: "新規作成"
+      chosen: "Chosen %{name}"
+      chose_all: "全て選択"
+      clear: "クリア"
+      clear_all: "全てクリア"
+      up: "Up"
+      down: "Down"
+      navigation: "ナビゲーション"
+      log_out: "ログアウト"
+      ago: "前"
+      csv_download: "CSVダウンロード"
+      csv_generate: "CSV出力"
+    flash:
+      successful: "%{name}の %{action} に成功しました"
+      error: "%{name} の %{action} に失敗しました"
+      noaction: "アクションが指定されていません"
+      model_not_found: "モデル '%{model}' が見つかりません"
+      object_not_found: "ID '%{id}' の%{model}が見つかりません"
+    table_headers:
+      model_name: "モデル名"
+      last_used: "Last used"
+      records: "レコード"
+      username: "ユーザ"
+      changes: "Changes"
+      created_at: "日時"
+      item: "アイテム"
+      message: "メッセージ"
+    actions:
+      dashboard:
+        title: "サイト管理"
+        menu: "ダッシュボード"
+        breadcrumb: "ダッシュボード"
+      index:
+        title: "%{model_label_plural}の一覧"
+        menu: "一覧"
+        breadcrumb: "%{model_label_plural}"
+      show:
+        title: "%{model_label} '%{object_label}' の詳細"
+        menu: "表示"
+        breadcrumb: "%{object_label}"
+      show_in_app:
+        menu: "アプリで表示"
+      new:
+        title: "新規 %{model_label}"
+        menu: "新規作成"
+        breadcrumb: "新規"
+        link: "新規 %{model_label} を作成"
+        done: "作成しました"
+      edit:
+        title: "%{model_label} '%{object_label}' の編集"
+        menu: "編集"
+        breadcrumb: "編集"
+        link: "この %{model_label} を編集"
+        done: "更新しました"
+      delete:
+        title: "%{model_label} '%{object_label}' の削除"
+        menu: "削除"
+        breadcrumb: "削除"
+        link: "'%{object_label}' を削除"
+        done: "削除しました"
+      bulk_delete:
+        title: "%{model_label_plural} の削除"
+        menu: "一括削除"
+        breadcrumb: "一括削除"
+        bulk_link: "選択した%{model_label_plural}の削除"
+      export:
+        title: "%{model_label_plural} のエクスポート"
+        menu: "エクスポート"
+        breadcrumb: "エクスポート"
+        link: "クエリ結果の%{model_label_plural}をエクスポート"
+        bulk_link: "選択した%{model_label_plural}のエクスポート"
+        done: "エクスポートしました"
+      history_index:
+        title: "%{model_label_plural} の履歴"
+        menu: "履歴"
+        breadcrumb: "履歴"
+      history_show:
+        title: "%{model_label} '%{object_label}' の履歴"
+        menu: "履歴"
+        breadcrumb: "履歴"
+    form:
+      cancel: "キャンセル"
+      basic_info: "基本情報"
+      required: "必須"
+      optional: "オプション"
+      one_char: "文字"
+      char_length_up_to: "最大文字数:"
+      char_length_of: "文字数:"
+      save: "保存"
+      save_and_add_another: "保存してもう一つ作成"
+      save_and_edit: "保存して編集画面へ"
+      all_of_the_following_related_items_will_be_deleted: ")を削除してよろしいですか？ 以下の関連するアイテムが削除されるかみなしご化されます:"
+      are_you_sure_you_want_to_delete_the_object: "本当に%{model_name} ("
+      confirmation: "はい。間違いありません！"
+      bulk_delete: "以下のオブジェクトが削除され、関連する依存オブジェクトも削除またはみなしご化されます:"
+      new_model: "%{name} (新規)"
+      when_customer_voice: "お客様の声の場合に設定してください"
+      when_media_feature: "媒体の特徴の場合に設定してください"
+    export:
+      confirmation: "%{name}としてエクスポート"
+      select: "エクスポートするフィールドの選択"
+      fields_from: "%{name}のフィールド"
+      fields_from_associated: "関連%{name}のフィールド"
+      display: "Display %{name}: %{type}"
+      options_for: "%{name}のオプション"
+      empty_value_for_associated_objects: "<空>"
+      click_to_reverse_selection: 'クリックで選択を反転'
+      csv:
+        header_for_root_methods: "%{name}" # 'model' is available
+        header_for_association_methods: "%{name} [%{association}]"
+        encoding_to: "エンコード:"
+        encoding_to_help: "出力エンコードを選択して下さい。空のままにすると現在の入力エンコードのままになります: (%{name})"
+        skip_header: "ヘッダを無し"
+        skip_header_help: "チェックするとヘッダ(フィールドのタイトル)を出力しません。"
+        default_col_sep: ","
+        col_sep: "カラム区切り文字"
+        col_sep_help: "空白にすると標準の '%{value}' になります。" # value is default_col_sep
+  messages:
+    error: "エラーが発生しました"
+    destroy_confirm: "本当に削除しますか?"
+    update_confirm: "変更はすぐに反映されます。\r更新してもよろしいですか?"
+    signed_in_failed: 'ログインIDもしくはパスワードが間違っています。'
+    signed_out: 'ログアウトしました。'
+    signed_in: 'ログインしました。'

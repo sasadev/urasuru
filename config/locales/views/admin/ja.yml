@@ -1,0 +1,107 @@
+ja:
+  views:
+    pagination:
+      first: '&laquo; 最初'
+      last: '最後 &raquo;'
+      next: '次 &rsaquo;'
+      previous: '&lsaquo; 前'
+      truncate: '&hellip;'
+    admin:
+      no_access_right:
+        title: 権限なし
+      default: &default
+        index:  一覧
+        show:   閲覧
+        new:    新規作成
+        create: 新規作成
+        edit:   編集
+        update: 編集
+        destroy: 削除
+        search: 検索
+        title: タイトル
+      example:
+        title: 例
+        actions:
+          <<: *default
+          edit: 例
+      page:
+        title: トップ
+        actions:
+          <<: *default
+          login: ログイン
+      users:
+        title: 顧客管理
+        actions:
+          <<: *default
+      addresses:
+        title: 住所
+        actions:
+          <<: *default
+      user_companions:
+        title: 同行者
+        actions:
+          <<: *default
+      contacts:
+        title: お問い合わせ
+        actions:
+          <<: *default
+      user_logs:
+        title: ユーザー操作ログ
+        actions:
+          <<: *default
+      user_histories:
+        title: 顧客更新履歴
+        actions:
+          <<: *default
+      seminar_users:
+        title: セミナーユーザー
+        actions:
+          <<: *default
+      seminars:
+        title: セミナー管理
+        actions:
+          <<: *default
+      seminar_details:
+        title: 小セミナー
+        actions:
+          <<: *default
+      keeps:
+        title: 検討中
+        actions:
+          <<: *default
+      speakers:
+        title: 演者
+        actions:
+          <<: *default
+      societies:
+        title: 学会情報管理
+        actions:
+          <<: *default
+      society_details:
+        title: 学会情報カテゴリ
+        actions:
+          <<: *default
+      notifications:
+        title: お知らせ管理
+        actions:
+          <<: *default
+      relation_tags:
+        title: リレーションタグ
+        actions:
+          <<: *default
+      tags:
+        title: タグ
+        actions:
+          <<: *default
+      documents:
+        title: ドキュメント
+        actions:
+          <<: *default
+      admins:
+        title: 管理者
+        actions:
+          <<: *default
+      configure:
+        title: 設定
+        actions:
+          <<: *default

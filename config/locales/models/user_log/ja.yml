@@ -1,0 +1,13 @@
+ja:
+  activerecord:
+    models:
+      user_log: ユーザー操作ログ
+    attributes:
+      user_log:
+        id: ID
+        created_at: 登録日
+        updated_at: 更新日時
+        access_url: アクセスURL
+        referer: 遷移元
+        user_agent: ユーザーエージェント
+        user_id: ユーザーID

@@ -1,0 +1,46 @@
+ja:
+  activerecord:
+    models:
+      notification: お知らせ
+    attributes:
+      notification:
+        id: ID
+        title: タイトル
+        is_published: 公開状態
+        mode: ユーザー種別
+        display_type: 表示タイプ
+        content: コンテンツ
+        url: URL
+        publish_at: 発行日
+        seminar_id: 対象セミナー
+    flash:
+      notification:
+        actions:
+          create:
+            success: お知らせの登録を完了しました。
+            failure:  入力を修正してください。
+          update:
+            success:  お知らせの更新を完了しました。
+            failure:  入力を修正してください。
+          destroy:
+            success:  お知らせの削除を完了しました。
+            failure:  お知らせを削除できませんでした。
+          cancel:
+            success:  お知らせのキャンセルを完了しました。
+            failure:  お知らせをキャンセルできませんでした。
+          suspend:
+            success:  お知らせを無効にしました。
+          activate:
+            success:  お知らせを有効にしました。
+  enums:
+    notification:
+      mode:
+        signed: 申込み済み
+        check: 検討中
+        cancel_wait: キャンセル待ち
+        whole: 全て
+      display_type:
+        popup: ポップアップ
+        link: リンク
+        tab: リンク（タブ）
+        text: テキストのみ

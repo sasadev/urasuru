@@ -1,0 +1,41 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require ../admin/bootstrap.css
+ *= require ../admin/bootstrap-extend.css
+ *= require ../admin/font-awesome.css
+ *= require ../admin/ionicons.css
+ *= require ../admin/select2.min.css
+ *= require ../admin/master_style.css
+ *= require ../admin/_all-skins.css
+ *= require ../admin/morris.css
+ *= require ../admin/weather-icons.css
+ *= require ../admin/jquery-jvectormap.css
+ *= require ../admin/bootstrap-datepicker.css
+ *= require ../admin/daterangepicker.css
+ *= require ../admin/bootstrap3-wysihtml5.css
+ *= require ../admin/sweetalert.css
+ *= require_self
+ */
+
+
+
+ul.example li {
+    height: 30px;
+    list-style: none;
+    margin-top: -10px;
+}
+
+.highlight-column {
+    color:  #f33;
+    background: #fff2f2;
+}

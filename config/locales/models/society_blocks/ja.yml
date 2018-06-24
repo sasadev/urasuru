@@ -1,0 +1,18 @@
+ja:
+  activerecord:
+    models:
+      society_block: 学会情報ブロック
+    attributes:
+      society_block:
+        id: ID
+        society_id: 学会ID
+        created_at: 登録日
+        updated_at: 更新日時
+        title: タイトル
+        theme: テーマ
+        remarks: 備考
+        start_at: 開始日時
+        end_at: 終了日時
+        event_datetime: 開催日時
+        lead_speakers_relations: 座長
+        general_speakers_relations: 演者

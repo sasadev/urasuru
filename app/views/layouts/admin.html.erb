@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="images/favicon.ico">
+
+  <title><%= t "views.admin.#{controller_name}.actions.#{action_name}" %> <%= t("views.admin.#{controller_name}.title") %> | JMECSEMINAR - 管理画面</title>
+
+  <%= stylesheet_link_tag 'admin/application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'admin/application' %>
+
+  <%= yield :stylesheets %>
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+
+</head>
+<body class="<%= 'sidebar-collapse' if controller_name == 'system_mails' %> hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="/admin" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>J</b></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Jmec</b>Seminar</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <% if false %>
+              <li class="dropdown notifications-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-bell"></i>
+                  <span class="label label-warning">7</span>
+                </a>
+                <ul class="dropdown-menu scale-up">
+                  <li class="header">You have 7 notifications</li>
+                  <li>
+                    <!-- inner menu: contains the actual data -->
+                    <ul class="menu inner-content-div">
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-users text-aqua"></i> Curabitur id eros quis nunc suscipit blandit.
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-warning text-yellow"></i> Duis malesuada justo eu sapien elementum, in semper diam posuere.
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-users text-red"></i> Donec at nisi sit amet tortor commodo porttitor pretium a erat.
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-shopping-cart text-green"></i> In gravida mauris et nisi
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-user text-red"></i> Praesent eu lacus in libero dictum fermentum.
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-user text-red"></i> Nunc fringilla lorem
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa fa-user text-red"></i> Nullam euismod dolor ut quam interdum, at scelerisque ipsum imperdiet.
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="footer"><a href="#">View all</a></li>
+                </ul>
+              </li>
+          <% end %>
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="control-sidebar"><i class="fa fa-cog fa-spin"></i></a>
+          </li>
+          <li class="dropdown messages-menu">
+            <%= link_to raw("<i class=\"fa fa-power-off\"></i>"), admin_logout_path, class:'dropdown-toggle', data: {"original-title": 'Logout', toggle: 'tooltip'} %>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <% if false %>
+          <div class="user-panel">
+            <div class="image float-left">
+              <img src="/images/user2-160x160.jpg" class="rounded" alt="User Image">
+            </div>
+            <div class="info float-left">
+              <p>Bonito Themes</p>
+              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+          </div>
+      <% else %>
+          <div class="user-panel"></div>
+      <% end %>
+
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li>
+          <%= link_to raw("<i class=\"fa fa-users\"></i> <span>顧客管理マスタ</span>"), admin_users_path %>
+        </li>
+        <li>
+          <%= link_to raw("<i class=\"fa fa-user-md\"></i> <span>学会情報マスタ</span>"), admin_societies_path %>
+        </li>
+        <li>
+          <%= link_to raw("<i class=\"fa fa-desktop\"></i> <span>セミナーマスタ</span>"), admin_seminars_path %>
+        </li>
+        <li>
+          <%= link_to raw("<i class=\"fa fa-envelope\"></i> <span>お知らせマスタ</span>"), admin_notifications_path %>
+        </li>
+        <li>
+          <%= link_to raw("<i class=\"fa fa-envelope\"></i> <span>問い合わせマスタ</span>"), admin_contacts_path %>
+        </li>
+        <li>
+          <%= link_to raw("<i class=\"fa fa-tag\"></i> <span>タグマスタ</span>"), admin_tags_path %>
+        </li>
+        <li>
+          <%= link_to raw("<i class=\"fa fa-user\"></i> <span>管理者マスタ</span>"), admin_admins_path %>
+        </li>
+        <li>
+          <%= link_to raw("<i class=\"fa fa-gear\"></i> <span>設定</span>"), admin_configure_path %>
+        </li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+    <div class="sidebar-footer">
+      <!-- item-->
+      <% if false %>
+          <a href="" class="link" data-toggle="tooltip" title="" data-original-title="Settings"><i class="fa fa-cog fa-spin"></i></a>
+          <!-- item-->
+          <a href="" class="link" data-toggle="tooltip" title="" data-original-title="Email"><i class="fa fa-envelope"></i></a>
+          <!-- item-->
+          <%= link_to raw("<i class=\"fa fa-power-off\"></i>"), admin_logout_path, data: {"original-title": 'Logout', toggle: 'tooltip'} %>
+      <% end %>
+    </div>
+  </aside>
+
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        <%= t("views.admin.#{controller_name}.title") %>  <small><%= t "views.admin.#{controller_name}.actions.#{action_name}" %></small>
+      </h1>
+    </section>
+    <% if flash[:notice] %>
+        <div class="alert alert-success alert-dismissable">
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> <%= flash[:notice] %>
+        </div>
+    <% end %>
+
+    <%= yield %>
+
+  </div>
+
+  <!-- /.content-wrapper -->
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane" id="control-sidebar-home-tab">
+      </div>
+    </div>
+  </aside>
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<div class="modal fade" tabindex="-1" id="admin-modal" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body" id="modal-body">
+        <!-- ・・・ -->
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
+
+
+<%= javascript_include_tag 'admin/jquery.js',
+                           'admin/jquery-ui.js',
+                           'admin/popper.min.js',
+                           'admin/bootstrap.js',
+                           'admin/chart.js',
+                           'admin/jquery.sparkline.js',
+                           'admin/jquery-jvectormap-1.2.2.min.js',
+                           'admin/jquery-jvectormap-world-mill-en.js',
+                           'admin/jquery.knob.js',
+                           'admin/moment.min.js',
+                           'admin/daterangepicker.js',
+                           'admin/bootstrap-datepicker.js',
+                           'admin/bootstrap-datepicker.ja.min.js',
+                           'admin/daterangepicker.js',
+                           'admin/bootstrap3-wysihtml5.all.js',
+                           'admin/jquery.slimscroll.js',
+                           'admin/fastclick.js',
+                           'admin/template.js',
+                           'admin/dashboard3.js',
+                           'admin/demo.js',
+                           'admin/WeatherIcon.js',
+                           'admin/select2.full.js',
+                           'admin/sweetalert.min.js',
+                           'admin/jquery.sweet-alert.custom.js'%>
+<%= yield :javascripts %>
+
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button);
+
+
+  $('select.select2').select2({
+  });
+
+  $(function() {
+    $("#datepicker").datepicker( {
+      dateFormat: "yy-mm-dd",
+      language: 'ja',
+    } );
+  });
+</script>
+<script type="text/javascript">
+
+  WeatherIcon.add('icon1'	, WeatherIcon.SLEET , {stroke:false , shadow:false , animated:true } );
+  WeatherIcon.add('icon2'	, WeatherIcon.SNOW , {stroke:false , shadow:false , animated:true } );
+  WeatherIcon.add('icon3'	, WeatherIcon.LIGHTRAINTHUNDER , {stroke:false , shadow:false , animated:true } );
+
+</script>
+
+
+</body>
+</html>

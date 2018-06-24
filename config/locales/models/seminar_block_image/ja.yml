@@ -1,0 +1,12 @@
+ja:
+  activerecord:
+    models:
+      seminar_block_image: セミナーブロック画像
+    attributes:
+      seminar_block_image:
+        id: ID
+        seminar_block_id: セミナーブロックID
+        image: 画像
+        caption: 画像キャプション
+        created_at: 作成日時
+        updated_at: 更新日時

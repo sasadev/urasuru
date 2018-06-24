@@ -1,0 +1,13 @@
+ja:
+  activerecord:
+    models:
+      post_code_list: 郵便番号データ
+    attributes:
+      post_code_list:
+        id: ID
+        pref: 県
+        city: 市
+        town: 町
+        pref_kana: 県カタカナ
+        city_kana: 市カタカナ
+        town_kana: 町カタカナ

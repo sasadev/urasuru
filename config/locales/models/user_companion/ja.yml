@@ -1,0 +1,22 @@
+ja:
+  activerecord:
+    models:
+      user_companion: 同伴者
+    attributes:
+      seminar:
+        id: ID
+        created_at: 登録日
+        updated_at: 更新日時
+        deleted_at: 論理削除日時
+    flash:
+      seminar:
+        actions:
+          create:
+            success: 同伴者の登録を完了しました。
+            failure:  入力を修正してください。
+          update:
+            success:  同伴者の更新を完了しました。
+            failure:  入力を修正してください。
+          destroy:
+            success:  同伴者の削除を完了しました。
+            failure:  同伴者を削除できませんでした。

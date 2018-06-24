@@ -1,0 +1,38 @@
+ja:
+  activerecord:
+    models:
+      contact: お問い合わせ
+    attributes:
+      contact:
+        id: ID
+        user_id: ユーザーID
+        name: 名前
+        email: メールアドレス
+        status: ステータス
+        content: お問い合わせ内容
+        contact_at: お問い合わせ日時
+        created_at: 作成日時
+        updated_at: 更新日時
+    flash:
+      contact:
+        actions:
+          create:
+            success: お問い合わせの登録を完了しました。
+            failure: 入力を修正してください。
+          update:
+            success: お問い合わせの更新を完了しました。
+            failure: 入力を修正してください。
+          destroy:
+            success: お問い合わせの削除を完了しました。
+            failure: お問い合わせを削除できません。
+          suspend:
+            success: お問い合わせを無効にしました。
+          activate:
+            success: お問い合わせを有効にしました。
+  enums:
+    contact:
+      status:
+        not_compatible: 未対応
+        during_compatible: 対応中
+        compatible: 対応済み
+

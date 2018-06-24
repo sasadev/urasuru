@@ -1,0 +1,30 @@
+ja:
+  activerecord:
+    models:
+      society: 学会情報
+    attributes:
+      society:
+        id: ID
+        created_at: 登録日
+        updated_at: 更新日時
+        title: タイトル
+        code: コード
+        venue: 会場
+        content: 実施事項
+        is_published: 公開状態
+        event_date: 開催日
+        start_date: 開始日
+        end_date: 終了日
+        deleted_at: 論理削除日時
+    flash:
+      society:
+        actions:
+          create:
+            success: 学会情報の登録を完了しました。
+            failure:  入力を修正してください。
+          update:
+            success:  学会情報の更新を完了しました。
+            failure:  入力を修正してください。
+          destroy:
+            success:  学会情報の削除を完了しました。
+            failure:  学会情報を削除できませんでした。
