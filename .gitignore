@@ -13,5 +13,25 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*
+/tmp/*
 !/log/.keep
-/tmp
+!/tmp/.keep
+
+# Ignore Byebug command history file.
+.byebug_history
+
+/yarn.lock
+/Gemfile.lock
+/package.json
+
+/.idea*
+/config/database.yml
+/Gemfile.lock
+/db/schema.rb
+/public/uploads/*
+/public/file/uploads/*
+/file/migration/*
+/file/*
+/public/assets/*
+/public/images/project/*
+/home/*
